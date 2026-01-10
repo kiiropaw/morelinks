@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   
-.background {
+.hako {
   /*background-color: gray;
   color: white;
   border: 2px solid black;*/
@@ -25,11 +25,39 @@
   height: 300px;
   margin-top: 100px;
   margin-bottom: 100px;
+   cursor: move
 }
 
 .links {
  margin-top: -40px;
+   cursor: move
 }
+
+     <script>
+        window.onload = function () {
+            var draggableDiv = document.getElementById("hako");
+            var posX = 0,
+                posY = 0;
+            var draggable = false;
+
+            draggableDiv.addEventListener("mousedown", function (event) {
+                draggable = true;
+                posX = event.clientX - draggableDiv.offsetLeft;
+                posY = event.clientY - draggableDiv.offsetTop;
+            });
+
+            window.addEventListener("mousemove", function (event) {
+                if (draggable) {
+                    draggableDiv.style.left = event.clientX - posX + "px";
+                    draggableDiv.style.top = event.clientY - posY + "px";
+                }
+            });
+
+            window.addEventListener("mouseup", function () {
+                draggable = false;
+            });
+        };
+  
   
 </style> 
 </head>
