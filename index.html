@@ -8,6 +8,14 @@
     
 <style> 
 
+  #mydiv {
+  position: absolute;
+}
+
+#mydivheader {
+  cursor: move;
+}
+
   body {
   background: url("https://i.pinimg.com/736x/08/fc/4d/08fc4d1f525fcc4ba68abd93043dd0c3.jpg");
   background-attachment: fixed;
@@ -15,7 +23,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   
-.hako {
+.mydiv {
   /*background-color: gray;
   color: white;
   border: 2px solid black;*/
@@ -31,8 +39,8 @@
 <body>
     
 
-  <div id="hako">
-<div class="hako">
+  <div id="mydiv">
+<div class="mydiv">
   <div class="window glass active" style="max-width: 500px">
     <div class="title-bar" style="background-attachment: local;">
       <div class="title-bar-text">𖡼𖤣𖥧𖡼𓋼𖤣𖥧𓋼𓍊</div>
@@ -53,14 +61,15 @@
   <center> <p><a href="https://www.genuinemustelids.org/">Mustelids</a></p></p> </center>
        <center> <p><a href="http://messybeast.com/">Messybeast</a></p></p> </center>
       <center> <p><a href="https://www.inaturalist.org/">inaturalist</a></p></p> </center>
-      
+      </div>
+    </div>
     </div>
     
 </style> 
 
 <script>
 //Make the DIV element draggagle:
-dragElement(document.getElementById("hako"));
+dragElement(document.getElementById("mydiv"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
