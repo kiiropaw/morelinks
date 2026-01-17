@@ -1,71 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/7.css">
-    <title>More links!</title>
-    
-<style> 
-
-  #mydiv {
+<link rel="stylesheet" href="https://unpkg.com/7.css">
+<style>
+#mydiv {
   position: absolute;
 }
 
 #mydivheader {
   cursor: move;
 }
-
-  body {
-  background: url("https://i.pinimg.com/736x/08/fc/4d/08fc4d1f525fcc4ba68abd93043dd0c3.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-.mydiv {
-  /*background-color: gray;
-  color: white;
-  border: 2px solid black;*/
-  margin: auto;
-  padding: 50px;
-  width: 500px;
-  height: 300px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-   cursor: move;
-}
-
+</style>
 <body>
-    
 
-  <div id="mydiv">
-<div class="mydiv">
-  <div class="window glass active" style="max-width: 500px">
-    <div class="title-bar" style="background-attachment: local;">
-      <div class="title-bar-text">𖡼𖤣𖥧𖡼𓋼𖤣𖥧𓋼𓍊</div>
-      <div class="title-bar-controls">
-        <button aria-label="Minimize"></button>
-        <button aria-label="Close"></button> 
-      </div>
-    </div>
-    <div class="window-body has-space">
-      
-      <center> <p><p><a href="https://www.owlpages.com/owls/">Owls!!</a></p> </center>
-<center> <p><a href="https://www.animal-photo-references.com">Animal photos</a></p></p> </center>
-<center> <p><a href="https://metazooa.com/">metazooa</a></p></p> </center>
-  <center> <p><a href="https://animaldiversity.org/">ADW</a></p></p> </center>
-<center> <p><a href="https://switchzoo.com/">Switchzoo</a></p></p> </center>
- <center> <p><a href="https://neal.fun/deep-sea/">The Deep Sea</a></p></p> </center>
- <center> <p><a href="https://x6ud.github.io/#">Animal References</a></p></p> </center>
-  <center> <p><a href="https://www.genuinemustelids.org/">Mustelids</a></p></p> </center>
-       <center> <p><a href="http://messybeast.com/">Messybeast</a></p></p> </center>
-      <center> <p><a href="https://www.inaturalist.org/">inaturalist</a></p></p> </center>
-      </div>
-    </div>
-    </div>
-    
-</style> 
+<h1>Draggable DIV Element</h1>
+
+<p>Click and hold the mouse button down while moving the DIV element</p>
+
+<div id="mydiv">
+<div class="window glass active" style="max-width:330px;">
+  <div id="mydivheader">
+  					  <div class="title-bar">
+						<div class="title-bar-text">music</div>
+						<div class="title-bar-controls">
+						  <button aria-label="Minimize"></button>
+						  <button aria-label="Maximize"></button>
+						  <button aria-label="Close"></button>
+						</div>
+					  </div>
+  </div>
+					  <div class="window-body has-space">
+						<iframe src="../music.html" style="height:400px;" frameBorder="0"></iframe>
+						</div>
+					</div>
+</div>
 
 <script>
 //Make the DIV element draggagle:
@@ -113,7 +80,5 @@ function dragElement(elmnt) {
 }
 </script>
 
-</head>
-    
 </body>
 </html>
